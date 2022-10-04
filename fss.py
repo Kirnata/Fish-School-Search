@@ -141,3 +141,8 @@ def FSS(X_min, X_max, N_agent, iter, Wmax, StepMax, StepMin):
 		f.append(function(xi))
 	sort(X,f)
 	return X
+	
+#   FSS(X_min,              X_max,   N_agent, iter, Wmax, StepMax, StepMin)
+x = FSS([-512, -512, -512, -512], [512, 512, 512, 512], 1000, 1000, 50, 50, 10) #you can change it
+
+print(function(x[0]))
